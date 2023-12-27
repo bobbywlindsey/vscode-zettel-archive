@@ -9,7 +9,7 @@
     "url": "https://github.com/bobbywlindsey/vscode-zettel-archive"
   },
   "engines": {
-    "vscode": "^1.82.0"
+    "vscode": "^1.85.0"
   },
   "keywords": [
     "markdown",
