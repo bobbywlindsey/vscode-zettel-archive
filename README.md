@@ -13,7 +13,7 @@ Features:
 - Add timestamp-based IDs before all new files that get generated
 - Generate new IDs with a command (`vscodeZettelArchive.newNote`)
 
-[Install from the VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=maxedmands.vscode-zettel-markdown-notes).
+[Install from the VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=bobbywlindsey.vscode-zettel-archive).
 
 ### Screenshots
 
