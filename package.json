@@ -76,7 +76,7 @@
       ]
     }
   },
-  "icon": "images/vscode-markdown-notes.png",
+  "icon": "images/vscode-zettel-archive.png",
   "scripts": {
     "compile": "tsc -p ./",
     "lint": "eslint -c .eslintrc.js --ext .ts src",
