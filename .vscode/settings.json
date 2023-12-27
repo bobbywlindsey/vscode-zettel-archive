@@ -1,0 +1,52 @@
+{
+  "runInTerminal.commands": [
+    //////////////////////
+    // jest typescript
+    //////////////////////
+    // jest: test line
+    {
+      "cmd": "./jest-focused.sh ${relativeFile}:${line}",
+      "match": "\\.ts$",
+      "name": "l"
+    },
+    // jest: test suite
+    {
+      "cmd": "npx jest",
+      "match": "\\.ts$",
+      "name": "s"
+    }
+  ],
+  "cSpell.words": [
+    "Backlink",
+    "Backlinks",
+    "Berdn",
+    "Devops",
+    "Suping",
+    "ahazxm",
+    "andermerwed",
+    "basenames",
+    "davovscapcom",
+    "digiguru",
+    "dont",
+    "filepath",
+    "fullwidth",
+    "jumplist",
+    "kolloch",
+    "lukakemperle",
+    "lukesmurray",
+    "nevermind",
+    "notetaking",
+    "nvalt",
+    "pomdtr",
+    "prefill",
+    "qbikez",
+    "quickfold",
+    "regexes",
+    "thomaskoppelaar",
+    "unist",
+    "vpackage",
+    "vpublish",
+    "vsce",
+    "vsix"
+  ]
+}

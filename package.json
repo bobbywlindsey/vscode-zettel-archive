@@ -1,0 +1,113 @@
+{
+  "name": "vscode-zettel-archive",
+  "displayName": "Zettel Archive (Markdown Notes)",
+  "description": "Zettelkasten for VSCode with inspiration from The Archive",
+  "version": "0.0.1",
+  "publisher": "bobbywlindsey",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobbywlindsey/vscode-zettel-archive"
+  },
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "keywords": [
+    "markdown",
+    "zettelkasten",
+    "zettel",
+    "notebook",
+    "notes",
+    "notetaking",
+    "tagging",
+    "backlinks",
+    "wiki links"
+  ],
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "markdown.markdownItPlugins": true,
+    "languages": [
+      {
+        "id": "markdown-notes",
+        "aliases": [],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "markdown-notes",
+        "scopeName": "text.markdown.notes",
+        "path": "./syntaxes/notes.tmLanguage.json",
+        "injectTo": [
+          "text.html.markdown",
+          "text.html.markdown.jsx"
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "vscodeZettelArchive.newNote",
+        "title": "Zettel Archive: New Note"
+      }
+    ],
+    "configuration": {
+      "title": "Zettel Archive Configuration",
+      "properties": {
+        "vscodeZettelArchive.structureTag": {
+          "type": "string",
+          "default": "#structure",
+          "description": "Given a provided tag, all notes with the tag will be displayed under \"Structure Notes\" in the VSCode Explorer"
+        }
+      }
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "vscodeZettelArchiveBacklinks",
+          "name": "Backlinks"
+        },
+        {
+          "id": "vscodeZettelArchiveStructureNotes",
+          "name": "Structure Notes"
+        }
+      ]
+    }
+  },
+  "icon": "images/vscode-markdown-notes.png",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "lint": "eslint -c .eslintrc.js --ext .ts src",
+    "pretest": "npm run compile",
+    "vpackage": "./node_modules/.bin/vsce package",
+    "vpublish": "./node_modules/.bin/vsce publish",
+    "vscode:prepublish": "npm run compile",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/github-slugger": "^1.3.0",
+    "@types/glob": "^8.1.0",
+    "@types/node": "^20.10.5",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "babylon": "^6.18.0",
+    "eslint": "^8.56.0",
+    "glob": "^10.3.10",
+    "remark": "^15.0.1",
+    "remark-wiki-link": "^2.0.1",
+    "source-map-support": "^0.5.21",
+    "typescript": "^5.3.3",
+    "unified": "^11.0.4",
+    "unist-util-find": "^3.0.0",
+    "unist-util-visit": "^5.0.0",
+    "@thomaskoppelaar/markdown-it-wikilinks": "1.3.0",
+    "@vscode/vsce": "^2.22.0",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}
