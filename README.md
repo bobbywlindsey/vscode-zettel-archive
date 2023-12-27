@@ -11,11 +11,15 @@ Features:
 - Syntax highlighting for `[[wiki-links]]` and `#tags`
 - Autocomplete to any files in the directory when you start typing a `[[zettel-id]]`
 - Add timestamp-based IDs before all new files that get generated
-- Generate new IDs with a command (`vscodeZettelArchive.newNote`)
+- Generate new notes with unique timestamp IDs prepended with a single command (`vscodeZettelArchive.newNote`)
 
 [Install from the VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=bobbywlindsey.vscode-zettel-archive).
 
 ### Screenshots
+
+### Creating a new note
+
+![new-note](demo/new-note.gif)
 
 ### Backlinks Explorer Panel
 
@@ -29,25 +33,13 @@ Features:
 
 ![peek-and-go-to-definition](demo/peek-and-go-to-definition.gif)
 
-#### Peek References to Wiki Links
-
-![peek-references-wiki-link](demo/peek-references-wiki-link.png)
-
-#### Peek References to Tag
-
-![peek-references-tag](demo/peek-references-tag.png)
-
 #### Find All References to Wiki Links
 
-![find-all-references-wiki-link](demo/find-all-references-wiki-link.png)
+![find-all-references-wiki-link](demo/find-all-references-wiki-link.gif)
 
 #### Find All References to Tag
 
-![find-all-references-tag](demo/find-all-references-tag.png)
-
-#### `cmd+shift+f` to Search Workspace for Notes with Tag
-
-![tag-search](demo/tag-search.gif)
+![find-all-references-tag](demo/find-all-references-tag.gif)
 
 ## dev
 
