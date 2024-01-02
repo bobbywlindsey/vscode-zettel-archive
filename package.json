@@ -2,7 +2,7 @@
   "name": "vscode-zettel-archive",
   "displayName": "Zettel Archive (Markdown Notes)",
   "description": "Zettelkasten for VSCode with inspiration from The Archive",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "bobbywlindsey",
   "repository": {
     "type": "git",

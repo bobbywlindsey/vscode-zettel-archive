@@ -161,7 +161,7 @@ export class NoteWorkspace {
             preview: false,
           })
           .then(() => {
-            // if we created a new file, hop to line #3
+            // If we created a new file, hop to line #3
             if (!fileAlreadyExists) {
               let editor = vscode.window.activeTextEditor;
               if (editor) {
