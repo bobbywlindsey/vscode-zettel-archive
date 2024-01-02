@@ -11,7 +11,6 @@ export default class ZettelkastenUtilities {
     var day = String(date.getDate());
     if (Number(day) <= 9) {
       day = `0${day}`;
-      console.debug(day);
     }
     var hour = String(date.getHours());
     if (Number(hour) <= 9) {
